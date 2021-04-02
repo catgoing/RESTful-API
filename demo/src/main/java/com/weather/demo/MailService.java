@@ -19,7 +19,6 @@ public class MailService {
 	String nowTime = timeFormat.format(time.getTime());
 	
 	public void sendStartEmail(String emailAddr, String content) {
-		
 		SimpleMailMessage mail = new SimpleMailMessage();
 		mail.setTo(emailAddr);
 		mail.setFrom("kbkbbitcamp@gmail.com");
