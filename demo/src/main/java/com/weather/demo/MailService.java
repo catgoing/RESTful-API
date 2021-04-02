@@ -18,16 +18,16 @@ public class MailService {
 	Calendar time = Calendar.getInstance();
 	String nowTime = timeFormat.format(time.getTime());
 	
-	public void sendStartEmail(String emailAddr, String content) {
-		SimpleMailMessage mail = new SimpleMailMessage();
-		mail.setTo(emailAddr);
-		mail.setFrom("kbkbbitcamp@gmail.com");
-		mail.setSubject("Service Start Notify" + nowTime);
-		mail.setText(content);
-
-		javaMailSender.send(mail);
-
-	}
+//	public void sendStartEmail(String emailAddr, String content) {
+//		SimpleMailMessage mail = new SimpleMailMessage();
+//		mail.setTo(emailAddr);
+//		mail.setFrom("kbkbbitcamp@gmail.com");
+//		mail.setSubject("Service Start Notify" + nowTime);
+//		mail.setText(content);
+//
+//		javaMailSender.send(mail);
+//
+//	}
 	
 	public void sendServerDownEmail(String emailAddr, String content) {
 		SimpleMailMessage mail = new SimpleMailMessage();

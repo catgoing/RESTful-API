@@ -12,7 +12,7 @@ public class EmailTest {
 	@RequestMapping("/email")
 	public String emailtest1() {
 		
-		mail.sendStartEmail("sazya24@gmail.com", "test");
+		mail.sendServerDownEmail("sazya24@gmail.com", "test");
 
 		return "/today";
 	}
