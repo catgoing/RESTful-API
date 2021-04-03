@@ -12,12 +12,19 @@
 				, #{fine_dust}, #{particulate_dust}, #{wind_sp}, #{wind_dr}, #{time}, #{date}, #{reg_date})
 	</insert>
 
-	<select id="selectWeather" parameterType="com.weather.service.Weather" resultType="com.weather.service.Weather" >
+<!-- 	<select id="selectWeather" parameterType="com.weather.service.Weather" resultType="com.weather.service.Weather" >
 		SELECT 	LOCAL_NAME, RAINFALL_PROB, RAIN_PREC, MIN_TEMPERATURE
 				, MAX_TEMPERATURE, AVG_TEMPERATURE, FINE_DUST 
 				, PARTICULATE_DUST, WIND_SP, WIND_DR, REG_DATE
 		FROM 	WEATHER
-    <if test='local_name != null and local_name != ""'><!-- 만약 파라미터에 local_name가 있다면 SQL문에 WHERE절을 추가합니다. -->
+    <if test='local_name != null and local_name != ""'>만약 파라미터에 local_name가 있다면 SQL문에 WHERE절을 추가합니다.
+    	WHERE LOCAL_NAME = #{local_name}
+    </if>
+	</select> -->
+	<select id="selectWeather" parameterType="com.weather.service.Weather" resultType="com.weather.service.Weather" >
+		SELECT 	LOCAL_NAME, RAINFALL_PROB, RAIN_PREC, MIN_TEMPERATURE, MAX_TEMPERATURE, AVG_TEMPERATURE, FINE_DUST, PARTICULATE_DUST, WIND_SP, WIND_DR, TEMP_0, TEMP_3, TEMP_6, TEMP_9, TEMP_12, TEMP_15, TEMP_18, TEMP_21
+		FROM 	WEATHER
+    <if test='local_name != null and local_name != ""'> <!-- 만약 파라미터에 local_name가 있다면 SQL문에 WHERE절을 추가합니다. -->
     	WHERE LOCAL_NAME = #{local_name}
     </if>
 	</select>
