@@ -16,7 +16,6 @@ import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 
 
 @SpringBootApplication
-//@ServletComponentScan
 public class DemoApplication {
 
 	public static void main(String[] args) {
