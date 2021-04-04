@@ -9,24 +9,24 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 @RestControllerAdvice
-public class ApiExceptionAdvice {
-    @ExceptionHandler({ApiException.class})
-    public ResponseEntity<ApiExceptionEntity> exceptionHandler(HttpServletRequest request, final ApiException e) {
+public class APIExceptionAdvice {
+    @ExceptionHandler({APIException.class})
+    public ResponseEntity<APIExceptionEntity> exceptionHandler(HttpServletRequest request, final APIException e) {
         //e.printStackTrace();
         return ResponseEntity
                 .status(e.getError().getStatus())
-                .body(ApiExceptionEntity.builder()
+                .body(APIExceptionEntity.builder()
                         .errorCode(e.getError().getCode())
                         .errorMessage(e.getError().getMessage())
                         .build());
     }
 
     @ExceptionHandler({RuntimeException.class})
-    public ResponseEntity<ApiExceptionEntity> exceptionHandler(HttpServletRequest request, final RuntimeException e) {
+    public ResponseEntity<APIExceptionEntity> exceptionHandler(HttpServletRequest request, final RuntimeException e) {
         e.printStackTrace();
         return ResponseEntity
                 .status(ErrorNum.RUNTIME_EXCEPTION.getStatus())
-                .body(ApiExceptionEntity.builder()
+                .body(APIExceptionEntity.builder()
                         .errorCode(ErrorNum.RUNTIME_EXCEPTION.getCode())
                         .errorMessage(e.getMessage())
                         .build());

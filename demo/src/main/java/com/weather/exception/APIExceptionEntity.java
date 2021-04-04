@@ -7,12 +7,12 @@ import org.springframework.http.HttpStatus;
 
 @Getter
 @ToString
-public class ApiExceptionEntity {
+public class APIExceptionEntity {
     private String errorCode;
     private String errorMessage;
 
     @Builder
-    public ApiExceptionEntity(HttpStatus status, String errorCode, String errorMessage){
+    public APIExceptionEntity(HttpStatus status, String errorCode, String errorMessage){
         this.errorCode = errorCode;
         this.errorMessage = errorMessage;
     }

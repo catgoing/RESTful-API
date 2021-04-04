@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.weather.exception.ApiException;
+import com.weather.exception.APIException;
 import com.weather.exception.ErrorNum;
 import com.weather.service.Weather;
 import com.weather.service.WeatherDAO;
@@ -43,7 +43,7 @@ public class APIController {
 		param.setLocal_name(local_name);
 		List<Weather> weatherList = weatherDAO.selectWeather(param);// 22번 째 줄에서 생성한 객체를 파라미터로 전달하여 DB로부터 사용자 목록을 불러온다.
 		if(weatherList.size() == 0) {
-			throw new ApiException(ErrorNum.RUNTIME_EXCEPTION);
+			throw new APIException(ErrorNum.RUNTIME_EXCEPTION);
 		}
 		return weatherList;
 	}
@@ -56,7 +56,7 @@ public class APIController {
 		param.setLocal_name(local_name);
 		List<Weather> weatherList = weatherDAO.selectWeather(param);// 생성한 Weather 객체를 파라미터로 전달하여 DB로부터 내일 기상을 불러온다.
 		if(weatherList.size() == 0) {
-			throw new ApiException(ErrorNum.RUNTIME_EXCEPTION);
+			throw new APIException(ErrorNum.RUNTIME_EXCEPTION);
 		}
 		
 		return weatherList;
@@ -67,7 +67,7 @@ public class APIController {
 	public String postWeather(@RequestBody Weather param) {
 		int result = weatherDAO.insertWeather(param);// 생성한 Weather 객체를 파라미터로 전달하여 DB로부터 내일 기상을 조회
 		if(result == 0) {
-			throw new ApiException(ErrorNum.DATA_EXCEPTION);
+			throw new APIException(ErrorNum.DATA_EXCEPTION);
 		}
 		return result + "건 입력 완료";
 	}
@@ -77,7 +77,7 @@ public class APIController {
 	public String putWeather(@RequestBody Weather param) {
 		int result = weatherDAO.updateWeather(param);// 생성한 Weather 객체를 파라미터로 전달하여 DB에서 해당 기상을 수정
 		if(result == 0) {
-			throw new ApiException(ErrorNum.DATA_EXCEPTION);
+			throw new APIException(ErrorNum.DATA_EXCEPTION);
 		}
 		return result + "건 수정 완료";
 	}
@@ -87,7 +87,7 @@ public class APIController {
 	public String deleteWeather(@RequestBody Weather param) {
 		int result = weatherDAO.deleteWeather(param);// 생성한 Weather 객체를 파라미터로 전달하여 DB로부터 해당 기상을 삭제
 		if(result == 0) {
-			throw new ApiException(ErrorNum.DATA_EXCEPTION);
+			throw new APIException(ErrorNum.DATA_EXCEPTION);
 		}
 		return result + "건 삭제 완료";
 	}
@@ -96,8 +96,7 @@ public class APIController {
 	@RequestMapping(value = "/**", method = RequestMethod.GET)
 	@ResponseStatus(value = HttpStatus.BAD_REQUEST)
 	public void wrongRequest() { //잘못된 요청 통합처리
-
-			throw new ApiException(ErrorNum.RUNTIME_EXCEPTION);
+		throw new APIException(ErrorNum.RUNTIME_EXCEPTION);
 
 	}
 
