@@ -22,6 +22,7 @@ public class DemoApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
 		
+		
 	}
 	
 	  @Bean
@@ -35,10 +36,10 @@ public class DemoApplication {
 			return sessionFactory.getObject();
 		}
 	  
-//	  @Bean
-//	  public ShutDownCustom shutdown() {
-//	    return new ShutDownCustom();
-//	  }
+	  @Bean
+	  public ShutDownCustom shutdown() {
+	    return new ShutDownCustom();
+	  }
 //	  
 //	  @Bean
 //	  public ConfigurableServletWebServerFactory webServerFactory(final ShutDownCustom shutDownCustom) {

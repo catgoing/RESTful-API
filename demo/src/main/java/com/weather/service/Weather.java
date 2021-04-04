@@ -1,9 +1,5 @@
 package com.weather.service;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -12,11 +8,12 @@ import lombok.ToString;
 
 @Setter
 @Getter
-@AllArgsConstructor
+//@AllArgsConstructor
+@NoArgsConstructor
 @ToString
 public class Weather {
 	
-//	private String fc_date;				//예보일
+	private String fc_date;				//예보일
 	private String local_name;			//지역명
 	private double rainfall_prob;		//강수확률
 	private double rain_prec;			//일강수량
