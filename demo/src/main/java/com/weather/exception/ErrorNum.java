@@ -9,7 +9,8 @@ import org.springframework.http.HttpStatus;
 @ToString
 public enum ErrorNum {
     RUNTIME_EXCEPTION(HttpStatus.BAD_REQUEST, 
-    			"E0001", "잘못된 요청입니다. 올바른 요청: get - /weather/today or /weather/tomorrow || put, post, delete - /weather"),
+    			"E0001", "잘못된 요청입니다. 올바른 요청: get - /weather/today or /weather/tomorrow "
+    					+ "						|| put, post, delete - /weather"),
 	DATA_EXCEPTION(HttpStatus.BAD_REQUEST, 
 				"E0002", "입력 데이터 형식에 오류가 있습니다. 데이터를 다시 확인해주세요.");
 // 기타 예시
