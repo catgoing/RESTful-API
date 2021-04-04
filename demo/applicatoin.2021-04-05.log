@@ -1,0 +1,151 @@
+2021:04:05 00:39:12.705 INFO  --- [restartedMain] com.weather.demo.DemoApplication : Starting DemoApplication using Java 1.8.0_161 on DESKTOP-JGQ1FNH with PID 9328 (C:\GitHub\RESTful-API\demo\target\classes started by saza in C:\GitHub\RESTful-API\demo) 
+2021:04:05 00:39:12.712 INFO  --- [restartedMain] com.weather.demo.DemoApplication : No active profile set, falling back to default profiles: default 
+2021:04:05 00:39:12.762 INFO  --- [restartedMain] o.s.b.d.restart.ChangeableUrls : The Class-Path manifest attribute in C:\MyStudy\70_spring\mvn_repository\com\oracle\database\jdbc\ojdbc8\19.8.0.0\ojdbc8-19.8.0.0.jar referenced one or more files that do not exist: file:/C:/MyStudy/70_spring/mvn_repository/com/oracle/database/jdbc/ojdbc8/19.8.0.0/oraclepki.jar 
+2021:04:05 00:39:12.763 INFO  --- [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2021:04:05 00:39:12.763 INFO  --- [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2021:04:05 00:39:13.654 INFO  --- [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$450778c6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2021:04:05 00:39:13.701 INFO  --- [restartedMain] o.s.w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0] 
+2021:04:05 00:39:14.051 INFO  --- [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http) 
+2021:04:05 00:39:14.061 INFO  --- [restartedMain] o.a.catalina.core.StandardService : Starting service [Tomcat] 
+2021:04:05 00:39:14.062 INFO  --- [restartedMain] o.a.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.44] 
+2021:04:05 00:39:14.154 INFO  --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext 
+2021:04:05 00:39:14.155 INFO  --- [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1391 ms 
+2021:04:05 00:39:14.913 INFO  --- [restartedMain] o.s.s.c.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor' 
+2021:04:05 00:39:15.355 INFO  --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer : LiveReload server is running on port 35729 
+2021:04:05 00:39:15.391 INFO  --- [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer : Tomcat started on port(s): 8080 (http) with context path '' 
+2021:04:05 00:39:15.399 INFO  --- [restartedMain] com.weather.demo.DemoApplication : Started DemoApplication in 3.062 seconds (JVM running for 3.904) 
+2021:04:05 00:39:34.064 INFO  --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2021:04:05 00:39:34.067 INFO  --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet' 
+2021:04:05 00:39:34.068 INFO  --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet : Completed initialization in 1 ms 
+2021:04:05 00:39:34.135 INFO  --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting... 
+2021:04:05 00:39:36.717 INFO  --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed. 
+2021:04:05 01:06:26.442 INFO  --- [Thread-6] o.s.b.w.e.tomcat.GracefulShutdown : Commencing graceful shutdown. Waiting for active requests to complete 
+2021:04:05 01:06:26.444 INFO  --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown : Graceful shutdown complete 
+2021:04:05 01:06:26.489 INFO  --- [Thread-6] o.s.s.c.ThreadPoolTaskExecutor : Shutting down ExecutorService 'applicationTaskExecutor' 
+2021:04:05 01:06:26.490 INFO  --- [Thread-6] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated... 
+2021:04:05 01:06:28.403 INFO  --- [Thread-6] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed. 
+2021:04:05 01:06:28.565 INFO  --- [restartedMain] com.weather.demo.DemoApplication : Starting DemoApplication using Java 1.8.0_161 on DESKTOP-JGQ1FNH with PID 9328 (C:\GitHub\RESTful-API\demo\target\classes started by saza in C:\GitHub\RESTful-API\demo) 
+2021:04:05 01:06:28.565 INFO  --- [restartedMain] com.weather.demo.DemoApplication : No active profile set, falling back to default profiles: default 
+2021:04:05 01:06:28.751 INFO  --- [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$450778c6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2021:04:05 01:06:28.752 INFO  --- [restartedMain] o.s.w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0] 
+2021:04:05 01:06:28.836 INFO  --- [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http) 
+2021:04:05 01:06:28.837 INFO  --- [restartedMain] o.a.catalina.core.StandardService : Starting service [Tomcat] 
+2021:04:05 01:06:28.837 INFO  --- [restartedMain] o.a.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.44] 
+2021:04:05 01:06:28.862 INFO  --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext 
+2021:04:05 01:06:28.862 INFO  --- [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 295 ms 
+2021:04:05 01:06:28.942 INFO  --- [restartedMain] o.s.s.c.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor' 
+2021:04:05 01:06:29.004 INFO  --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer : LiveReload server is running on port 35729 
+2021:04:05 01:06:29.011 INFO  --- [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer : Tomcat started on port(s): 8080 (http) with context path '' 
+2021:04:05 01:06:29.013 INFO  --- [restartedMain] com.weather.demo.DemoApplication : Started DemoApplication in 0.489 seconds (JVM running for 1637.519) 
+2021:04:05 01:06:29.015 INFO  --- [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged 
+2021:04:05 01:07:08.561 INFO  --- [Thread-21] o.s.b.w.e.tomcat.GracefulShutdown : Commencing graceful shutdown. Waiting for active requests to complete 
+2021:04:05 01:07:08.564 INFO  --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown : Graceful shutdown complete 
+2021:04:05 01:07:08.605 INFO  --- [Thread-21] o.s.s.c.ThreadPoolTaskExecutor : Shutting down ExecutorService 'applicationTaskExecutor' 
+2021:04:05 01:07:08.782 INFO  --- [restartedMain] com.weather.demo.DemoApplication : Starting DemoApplication using Java 1.8.0_161 on DESKTOP-JGQ1FNH with PID 9328 (C:\GitHub\RESTful-API\demo\target\classes started by saza in C:\GitHub\RESTful-API\demo) 
+2021:04:05 01:07:08.782 INFO  --- [restartedMain] com.weather.demo.DemoApplication : No active profile set, falling back to default profiles: default 
+2021:04:05 01:07:08.949 WARN  --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner : No MyBatis mapper was found in '[com.weather.demo]' package. Please check your configuration. 
+2021:04:05 01:07:08.955 INFO  --- [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$450778c6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2021:04:05 01:07:08.956 INFO  --- [restartedMain] o.s.w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0] 
+2021:04:05 01:07:08.965 WARN  --- [restartedMain] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatServletWebServerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedTomcat.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory]: Factory method 'tomcatServletWebServerFactory' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'shutdown' defined in com.weather.demo.DemoApplication: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.weather.demo.ShutDownCustom] from ClassLoader [sun.misc.Launcher$AppClassLoader@764c12b6] 
+2021:04:05 01:07:08.968 INFO  --- [restartedMain] o.s.b.a.l.ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+2021:04:05 01:07:08.989 ERROR --- [restartedMain] o.s.boot.SpringApplication : Application run failed 
+org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatServletWebServerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedTomcat.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory]: Factory method 'tomcatServletWebServerFactory' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'shutdown' defined in com.weather.demo.DemoApplication: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.weather.demo.ShutDownCustom] from ClassLoader [sun.misc.Launcher$AppClassLoader@764c12b6]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:577)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:769)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1313)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
+	at com.weather.demo.DemoApplication.main(DemoApplication.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatServletWebServerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedTomcat.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory]: Factory method 'tomcatServletWebServerFactory' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'shutdown' defined in com.weather.demo.DemoApplication: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.weather.demo.ShutDownCustom] from ClassLoader [sun.misc.Launcher$AppClassLoader@764c12b6]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getWebServerFactory(ServletWebServerApplicationContext.java:216)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:179)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:159)
+	... 14 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory]: Factory method 'tomcatServletWebServerFactory' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'shutdown' defined in com.weather.demo.DemoApplication: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.weather.demo.ShutDownCustom] from ClassLoader [sun.misc.Launcher$AppClassLoader@764c12b6]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 26 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'shutdown' defined in com.weather.demo.DemoApplication: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.weather.demo.ShutDownCustom] from ClassLoader [sun.misc.Launcher$AppClassLoader@764c12b6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:579)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1605)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1562)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1406)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory$DependencyObjectProvider.resolveStream(DefaultListableBeanFactory.java:2108)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory$DependencyObjectProvider.orderedStream(DefaultListableBeanFactory.java:2102)
+	at org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryConfiguration$EmbeddedTomcat.tomcatServletWebServerFactory(ServletWebServerFactoryConfiguration.java:78)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 27 common frames omitted
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.weather.demo.ShutDownCustom] from ClassLoader [sun.misc.Launcher$AppClassLoader@764c12b6]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:739)
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:671)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.buildResourceMetadata(CommonAnnotationBeanPostProcessor.java:366)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:347)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:295)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1098)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:576)
+	... 45 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: Lcom/weather/demo/MailService;
+	at java.lang.Class.getDeclaredFields0(Native Method)
+	at java.lang.Class.privateGetDeclaredFields(Unknown Source)
+	at java.lang.Class.getDeclaredFields(Unknown Source)
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:734)
+	... 51 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.weather.demo.MailService
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 55 common frames omitted
+2021:04:05 01:07:54.583 INFO  --- [restartedMain] com.weather.api.DemoApplication : Starting DemoApplication using Java 1.8.0_161 on DESKTOP-JGQ1FNH with PID 5132 (C:\GitHub\RESTful-API\demo\target\classes started by saza in C:\GitHub\RESTful-API\demo) 
+2021:04:05 01:07:54.585 INFO  --- [restartedMain] com.weather.api.DemoApplication : No active profile set, falling back to default profiles: default 
+2021:04:05 01:07:54.618 INFO  --- [restartedMain] o.s.b.d.restart.ChangeableUrls : The Class-Path manifest attribute in C:\MyStudy\70_spring\mvn_repository\com\oracle\database\jdbc\ojdbc8\19.8.0.0\ojdbc8-19.8.0.0.jar referenced one or more files that do not exist: file:/C:/MyStudy/70_spring/mvn_repository/com/oracle/database/jdbc/ojdbc8/19.8.0.0/oraclepki.jar 
+2021:04:05 01:07:54.618 INFO  --- [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2021:04:05 01:07:54.618 INFO  --- [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2021:04:05 01:07:55.294 INFO  --- [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$6159f59c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2021:04:05 01:07:55.318 INFO  --- [restartedMain] o.s.w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0] 
+2021:04:05 01:07:55.597 INFO  --- [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http) 
+2021:04:05 01:07:55.606 INFO  --- [restartedMain] o.a.catalina.core.StandardService : Starting service [Tomcat] 
+2021:04:05 01:07:55.606 INFO  --- [restartedMain] o.a.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.44] 
+2021:04:05 01:07:55.678 INFO  --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext 
+2021:04:05 01:07:55.678 INFO  --- [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1059 ms 
+2021:04:05 01:07:56.312 INFO  --- [restartedMain] o.s.s.c.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor' 
+2021:04:05 01:07:56.737 INFO  --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer : LiveReload server is running on port 35729 
+2021:04:05 01:07:56.765 INFO  --- [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer : Tomcat started on port(s): 8080 (http) with context path '' 
+2021:04:05 01:07:56.772 INFO  --- [restartedMain] com.weather.api.DemoApplication : Started DemoApplication in 2.529 seconds (JVM running for 3.213) 
+2021:04:05 01:08:10.949 INFO  --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2021:04:05 01:08:10.951 INFO  --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet' 
+2021:04:05 01:08:10.954 INFO  --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet : Completed initialization in 1 ms 
+2021:04:05 01:08:11.010 INFO  --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting... 
+2021:04:05 01:08:13.456 INFO  --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed. 

@@ -1,4 +1,4 @@
-package com.weather.demo;
+package com.weather.api;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;

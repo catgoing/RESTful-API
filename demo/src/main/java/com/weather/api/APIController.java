@@ -1,4 +1,4 @@
-package com.weather.demo;
+package com.weather.api;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -17,6 +17,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.weather.exception.ApiException;
+import com.weather.exception.ErrorNum;
 import com.weather.service.Weather;
 import com.weather.service.WeatherDAO;
 
@@ -63,7 +65,6 @@ public class APIController {
 	@PostMapping(value = "/weather")
 	@ResponseStatus(value = HttpStatus.OK)
 	public String postWeather(@RequestBody Weather param) {
-
 		int result = weatherDAO.insertWeather(param);// 생성한 Weather 객체를 파라미터로 전달하여 DB로부터 내일 기상을 조회
 		if(result == 0) {
 			throw new ApiException(ErrorNum.DATA_EXCEPTION);
@@ -74,7 +75,6 @@ public class APIController {
 	@PutMapping(value = "/weather")
 	@ResponseStatus(value = HttpStatus.OK)
 	public String putWeather(@RequestBody Weather param) {
-		
 		int result = weatherDAO.updateWeather(param);// 생성한 Weather 객체를 파라미터로 전달하여 DB에서 해당 기상을 수정
 		if(result == 0) {
 			throw new ApiException(ErrorNum.DATA_EXCEPTION);
@@ -85,7 +85,6 @@ public class APIController {
 	@DeleteMapping(value = "/weather")
 	@ResponseStatus(value = HttpStatus.OK)
 	public String deleteWeather(@RequestBody Weather param) {
-		
 		int result = weatherDAO.deleteWeather(param);// 생성한 Weather 객체를 파라미터로 전달하여 DB로부터 해당 기상을 삭제
 		if(result == 0) {
 			throw new ApiException(ErrorNum.DATA_EXCEPTION);

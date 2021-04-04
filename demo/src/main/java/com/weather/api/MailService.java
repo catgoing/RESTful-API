@@ -1,4 +1,4 @@
-package com.weather.demo;
+package com.weather.api;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;

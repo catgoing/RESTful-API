@@ -1,4 +1,4 @@
-package com.weather.demo;
+package com.weather.exception;
 
 
 import lombok.Getter;

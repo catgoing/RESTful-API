@@ -1,4 +1,4 @@
-package com.weather.demo;
+package com.weather.api;
 
 import java.util.concurrent.Executor;
 import java.util.concurrent.ThreadPoolExecutor;
