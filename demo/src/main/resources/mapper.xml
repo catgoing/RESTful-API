@@ -4,23 +4,39 @@
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.weather.service.WeatherDAO">
 
-	<insert id="insert" parameterType="com.weather.service.Weather">
-		INSERT INTO WEATHER (LOCAL_NAME, RAINFALL_PROB, RAIN_PREC, MIN_TEMPERATURE
-							, MAX_TEMPERATURE, AVG_TEMPERATURE, FINE_DUST 
-							, PARTICULATE_DUST, WIND_SP, WIND_DR, TIME, DATE, REG_DATE)
-		VALUES (#{local_name}, #{rainfall_prob}, #{rain_prec}, #{min_temperature}, #{max_temperature}, #{avg_temperature}
-				, #{fine_dust}, #{particulate_dust}, #{wind_sp}, #{wind_dr}, #{time}, #{date}, #{reg_date})
-	</insert>
-
 	<select id="selectWeather" parameterType="com.weather.service.Weather" resultType="com.weather.service.Weather" >
-		SELECT 	LOCAL_NAME, RAINFALL_PROB, RAIN_PREC, MIN_TEMPERATURE
-				, MAX_TEMPERATURE, AVG_TEMPERATURE, FINE_DUST 
-				, PARTICULATE_DUST, WIND_SP, WIND_DR, REG_DATE
+		SELECT 	TO_CHAR(FC_DATE, 'YYYY-MM-DD') AS FC_DATE, LOCAL_NAME, RAINFALL_PROB, RAIN_PREC, MIN_TEMPERATURE, MAX_TEMPERATURE, AVG_TEMPERATURE
+				, FINE_DUST, PARTICULATE_DUST, WIND_SP, WIND_DR, TEMP_0, TEMP_3, TEMP_6, TEMP_9, TEMP_12, TEMP_15, TEMP_18, TEMP_21
 		FROM 	WEATHER
-    <if test='local_name != null and local_name != ""'><!-- 만약 파라미터에 local_name가 있다면 SQL문에 WHERE절을 추가합니다. -->
-    	WHERE LOCAL_NAME = #{local_name}
+		WHERE 	TO_CHAR(FC_DATE, 'YYYY-MM-DD') = #{fc_date}
+    <if test='local_name != null and local_name != ""'> <!-- 만약 파라미터에 local_name가 있다면 SQL문에 WHERE절을 추가합니다. -->
+    	AND LOCAL_NAME = #{local_name}
     </if>
 	</select>
+
+	<insert id="insertWeather" parameterType="com.weather.service.Weather">
+		INSERT INTO WEATHER (FC_DATE, LOCAL_NAME, RAINFALL_PROB, RAIN_PREC, MIN_TEMPERATURE
+							, MAX_TEMPERATURE, AVG_TEMPERATURE)
+		VALUES (TO_DATE(#{fc_date}, 'YYYY-MM-DD'), #{local_name}, #{rainfall_prob}, #{rain_prec}, #{min_temperature}, 
+				#{max_temperature}, #{avg_temperature})
+	</insert>
+	
+	<update id="updateWeather" parameterType="com.weather.service.Weather">
+		UPDATE 	WEATHER
+		SET  	RAINFALL_PROB = #{rainfall_prob},
+				RAIN_PREC = #{rain_prec}, 
+				MIN_TEMPERATURE = #{min_temperature}, 
+				MAX_TEMPERATURE = #{max_temperature}, 
+				AVG_TEMPERATURE = #{avg_temperature}
+		WHERE 	TO_CHAR(FC_DATE, 'YYYY-MM-DD') = #{fc_date}
+		AND 	LOCAL_NAME = #{local_name}
+	</update>
+	
+	<delete id="deleteWeather" parameterType="com.weather.service.Weather">
+		DELETE 	WEATHER
+		WHERE 	TO_CHAR(FC_DATE, 'YYYY-MM-DD') = #{fc_date}
+		AND 	LOCAL_NAME = #{local_name}
+	</delete>
 		
 </mapper>
 
