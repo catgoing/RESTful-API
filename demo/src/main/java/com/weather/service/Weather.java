@@ -8,7 +8,6 @@ import lombok.ToString;
 
 @Setter
 @Getter
-//@AllArgsConstructor
 @NoArgsConstructor
 @ToString
 public class Weather {
@@ -24,7 +23,6 @@ public class Weather {
 	private int particulate_dust;		//초미세먼지
 	private int wind_sp;				//풍량
 	private int wind_dr;				//풍향
-//	private String reg_date;			//등록일
 	private int temp_0;					//0시 기온
 	private int temp_3;					//3시 기온
 	private int temp_6;					//6시 기온

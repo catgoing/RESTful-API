@@ -14,9 +14,7 @@ import org.springframework.context.event.ContextClosedEvent;
 
 public class ShutDownCustom implements TomcatConnectorCustomizer, ApplicationListener<ContextClosedEvent> {
     private static final Logger log = LoggerFactory.getLogger(ShutDownCustom.class);
-
     private static final int TIMEOUT = 50;
-
     private volatile Connector connector;
 	@Autowired
 	private MailService mail;

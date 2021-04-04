@@ -23,6 +23,7 @@ public class DemoApplication {
 
 	}
 	
+	//MyBatis 사용을 위한 설정
 	  @Bean
 	  public SqlSessionFactory sqlSessionFactory(DataSource dataSource) throws Exception {
 			SqlSessionFactoryBean sessionFactory = new SqlSessionFactoryBean();
@@ -34,8 +35,9 @@ public class DemoApplication {
 			return sessionFactory.getObject();
 		}
 	  
+	//서버가 내려갈 때 동작할 Bean 생성
 	  @Bean
-	  public ShutDownCustom shutdown() {
+	  public ShutDownCustom shutdown() { 
 	    return new ShutDownCustom();
 	  }
 

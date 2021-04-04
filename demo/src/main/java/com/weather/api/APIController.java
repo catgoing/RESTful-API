@@ -32,7 +32,7 @@ public class APIController {
 	
 	Date date_today = new Date();
 	Date date_tomorrow = new Date(date_today.getTime ( ) + (long) ( 1000 * 60 * 60 * 24 ));
-	String today = timeFormat.format(date_today);
+	String today = timeFormat.format(date_today); //오늘 날짜를 YYYY-MM-DD 형식으로 저장
 	String tomorrow = timeFormat.format(date_tomorrow);
 
 	@RequestMapping(value = "/weather/today", method = RequestMethod.GET)
@@ -65,7 +65,7 @@ public class APIController {
 	@PostMapping(value = "/weather")
 	@ResponseStatus(value = HttpStatus.OK)
 	public String postWeather(@RequestBody Weather param) {
-		int result = weatherDAO.insertWeather(param);// 생성한 Weather 객체를 파라미터로 전달하여 DB로부터 내일 기상을 조회
+		int result = weatherDAO.insertWeather(param);// 생성한 Weather 객체를 파라미터로 전달하여 DB에 기상정보 입력
 		if(result == 0) {
 			throw new APIException(ErrorNum.DATA_EXCEPTION);
 		}
