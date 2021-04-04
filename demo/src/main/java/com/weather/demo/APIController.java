@@ -92,5 +92,14 @@ public class APIController {
 		}
 		return result + "건 삭제 완료";
 	}
+	
+
+	@RequestMapping(value = "/**", method = RequestMethod.GET)
+	@ResponseStatus(value = HttpStatus.BAD_REQUEST)
+	public void wrongRequest() { //잘못된 요청 통합처리
+
+			throw new ApiException(ErrorNum.RUNTIME_EXCEPTION);
+
+	}
 
 }
