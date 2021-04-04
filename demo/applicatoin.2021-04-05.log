@@ -149,3 +149,246 @@ Caused by: java.lang.ClassNotFoundException: com.weather.demo.MailService
 2021:04:05 01:08:10.954 INFO  --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet : Completed initialization in 1 ms 
 2021:04:05 01:08:11.010 INFO  --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting... 
 2021:04:05 01:08:13.456 INFO  --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed. 
+2021:04:05 01:09:43.970 ERROR --- [http-nio-8080-exec-5] o.a.c.c.C.[.[.[.[dispatcherServlet] : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.weather.exception.ApiException: 잘못된 요청입니다. 올바른 요청: get - /weather/today or /weather/tomorrow || put, post, delete - /weather] with root cause 
+com.weather.exception.ApiException: 잘못된 요청입니다. 올바른 요청: get - /weather/today or /weather/tomorrow || put, post, delete - /weather
+	at com.weather.api.APIController.wrongRequest(APIController.java:100)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2021:04:05 01:09:58.009 ERROR --- [http-nio-8080-exec-7] o.a.c.c.C.[.[.[.[dispatcherServlet] : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.weather.exception.ApiException: 잘못된 요청입니다. 올바른 요청: get - /weather/today or /weather/tomorrow || put, post, delete - /weather] with root cause 
+com.weather.exception.ApiException: 잘못된 요청입니다. 올바른 요청: get - /weather/today or /weather/tomorrow || put, post, delete - /weather
+	at com.weather.api.APIController.wrongRequest(APIController.java:100)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2021:04:05 01:13:10.624 INFO  --- [Thread-6] o.s.b.w.e.tomcat.GracefulShutdown : Commencing graceful shutdown. Waiting for active requests to complete 
+2021:04:05 01:13:10.627 INFO  --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown : Graceful shutdown complete 
+2021:04:05 01:13:10.665 INFO  --- [Thread-6] o.s.s.c.ThreadPoolTaskExecutor : Shutting down ExecutorService 'applicationTaskExecutor' 
+2021:04:05 01:13:10.668 INFO  --- [Thread-6] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated... 
+2021:04:05 01:13:12.595 INFO  --- [Thread-6] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed. 
+2021:04:05 01:13:12.776 INFO  --- [restartedMain] com.weather.api.DemoApplication : Starting DemoApplication using Java 1.8.0_161 on DESKTOP-JGQ1FNH with PID 5132 (C:\GitHub\RESTful-API\demo\target\classes started by saza in C:\GitHub\RESTful-API\demo) 
+2021:04:05 01:13:12.776 INFO  --- [restartedMain] com.weather.api.DemoApplication : No active profile set, falling back to default profiles: default 
+2021:04:05 01:13:12.961 INFO  --- [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$6159f59c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2021:04:05 01:13:12.962 INFO  --- [restartedMain] o.s.w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0] 
+2021:04:05 01:13:13.044 INFO  --- [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http) 
+2021:04:05 01:13:13.044 INFO  --- [restartedMain] o.a.catalina.core.StandardService : Starting service [Tomcat] 
+2021:04:05 01:13:13.045 INFO  --- [restartedMain] o.a.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.44] 
+2021:04:05 01:13:13.069 INFO  --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext 
+2021:04:05 01:13:13.070 INFO  --- [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 292 ms 
+2021:04:05 01:13:13.148 INFO  --- [restartedMain] o.s.s.c.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor' 
+2021:04:05 01:13:13.215 INFO  --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer : LiveReload server is running on port 35729 
+2021:04:05 01:13:13.222 INFO  --- [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer : Tomcat started on port(s): 8080 (http) with context path '' 
+2021:04:05 01:13:13.225 INFO  --- [restartedMain] com.weather.api.DemoApplication : Started DemoApplication in 0.495 seconds (JVM running for 319.666) 
+2021:04:05 01:13:13.227 INFO  --- [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged 
+2021:04:05 01:13:26.957 INFO  --- [Thread-12] o.s.b.w.e.tomcat.GracefulShutdown : Commencing graceful shutdown. Waiting for active requests to complete 
+2021:04:05 01:13:26.961 INFO  --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown : Graceful shutdown complete 
+2021:04:05 01:13:26.999 INFO  --- [Thread-12] o.s.s.c.ThreadPoolTaskExecutor : Shutting down ExecutorService 'applicationTaskExecutor' 
+2021:04:05 01:13:27.142 INFO  --- [restartedMain] com.weather.api.DemoApplication : Starting DemoApplication using Java 1.8.0_161 on DESKTOP-JGQ1FNH with PID 5132 (C:\GitHub\RESTful-API\demo\target\classes started by saza in C:\GitHub\RESTful-API\demo) 
+2021:04:05 01:13:27.143 INFO  --- [restartedMain] com.weather.api.DemoApplication : No active profile set, falling back to default profiles: default 
+2021:04:05 01:13:27.307 INFO  --- [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$6159f59c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2021:04:05 01:13:27.307 INFO  --- [restartedMain] o.s.w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0] 
+2021:04:05 01:13:27.339 INFO  --- [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http) 
+2021:04:05 01:13:27.340 INFO  --- [restartedMain] o.a.catalina.core.StandardService : Starting service [Tomcat] 
+2021:04:05 01:13:27.340 INFO  --- [restartedMain] o.a.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.44] 
+2021:04:05 01:13:27.356 INFO  --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext 
+2021:04:05 01:13:27.357 INFO  --- [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 212 ms 
+2021:04:05 01:13:27.438 INFO  --- [restartedMain] o.s.s.c.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor' 
+2021:04:05 01:13:27.506 INFO  --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer : LiveReload server is running on port 35729 
+2021:04:05 01:13:27.513 INFO  --- [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer : Tomcat started on port(s): 8080 (http) with context path '' 
+2021:04:05 01:13:27.517 INFO  --- [restartedMain] com.weather.api.DemoApplication : Started DemoApplication in 0.41 seconds (JVM running for 333.958) 
+2021:04:05 01:13:27.518 INFO  --- [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged 
+2021:04:05 01:18:45.917 INFO  --- [restartedMain] com.weather.api.DemoApplication : Starting DemoApplication using Java 1.8.0_161 on DESKTOP-JGQ1FNH with PID 10984 (C:\GitHub\RESTful-API\demo\target\classes started by saza in C:\GitHub\RESTful-API\demo) 
+2021:04:05 01:18:45.919 INFO  --- [restartedMain] com.weather.api.DemoApplication : No active profile set, falling back to default profiles: default 
+2021:04:05 01:18:45.952 INFO  --- [restartedMain] o.s.b.d.restart.ChangeableUrls : The Class-Path manifest attribute in C:\MyStudy\70_spring\mvn_repository\com\oracle\database\jdbc\ojdbc8\19.8.0.0\ojdbc8-19.8.0.0.jar referenced one or more files that do not exist: file:/C:/MyStudy/70_spring/mvn_repository/com/oracle/database/jdbc/ojdbc8/19.8.0.0/oraclepki.jar 
+2021:04:05 01:18:45.952 INFO  --- [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2021:04:05 01:18:45.952 INFO  --- [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2021:04:05 01:18:46.636 INFO  --- [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$ae518f25] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2021:04:05 01:18:46.658 INFO  --- [restartedMain] o.s.w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0] 
+2021:04:05 01:18:46.965 INFO  --- [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http) 
+2021:04:05 01:18:46.975 INFO  --- [restartedMain] o.a.catalina.core.StandardService : Starting service [Tomcat] 
+2021:04:05 01:18:46.976 INFO  --- [restartedMain] o.a.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.44] 
+2021:04:05 01:18:47.063 INFO  --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext 
+2021:04:05 01:18:47.063 INFO  --- [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1110 ms 
+2021:04:05 01:18:47.721 INFO  --- [restartedMain] o.s.s.c.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor' 
+2021:04:05 01:18:48.190 WARN  --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer : Unable to start LiveReload server 
+2021:04:05 01:18:48.218 WARN  --- [restartedMain] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use 
+2021:04:05 01:18:48.223 INFO  --- [restartedMain] o.s.s.c.ThreadPoolTaskExecutor : Shutting down ExecutorService 'applicationTaskExecutor' 
+2021:04:05 01:18:48.232 INFO  --- [restartedMain] o.a.catalina.core.StandardService : Stopping service [Tomcat] 
+2021:04:05 01:18:48.243 INFO  --- [restartedMain] o.s.b.a.l.ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+2021:04:05 01:18:48.261 ERROR --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+ 
+2021:04:05 01:18:51.678 INFO  --- [Thread-17] o.s.b.w.e.tomcat.GracefulShutdown : Commencing graceful shutdown. Waiting for active requests to complete 
+2021:04:05 01:18:51.680 INFO  --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown : Graceful shutdown complete 
+2021:04:05 01:18:51.726 INFO  --- [Thread-17] o.s.s.c.ThreadPoolTaskExecutor : Shutting down ExecutorService 'applicationTaskExecutor' 
+2021:04:05 01:18:51.920 INFO  --- [restartedMain] com.weather.api.DemoApplication : Starting DemoApplication using Java 1.8.0_161 on DESKTOP-JGQ1FNH with PID 5132 (C:\GitHub\RESTful-API\demo\target\classes started by saza in C:\GitHub\RESTful-API\demo) 
+2021:04:05 01:18:51.921 INFO  --- [restartedMain] com.weather.api.DemoApplication : No active profile set, falling back to default profiles: default 
+2021:04:05 01:18:52.106 INFO  --- [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$6159f59c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2021:04:05 01:18:52.107 INFO  --- [restartedMain] o.s.w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0] 
+2021:04:05 01:18:52.189 INFO  --- [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http) 
+2021:04:05 01:18:52.190 INFO  --- [restartedMain] o.a.catalina.core.StandardService : Starting service [Tomcat] 
+2021:04:05 01:18:52.190 INFO  --- [restartedMain] o.a.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.44] 
+2021:04:05 01:18:52.210 INFO  --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext 
+2021:04:05 01:18:52.210 INFO  --- [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 287 ms 
+2021:04:05 01:18:52.284 INFO  --- [restartedMain] o.s.s.c.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor' 
+2021:04:05 01:18:52.346 INFO  --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer : LiveReload server is running on port 35729 
+2021:04:05 01:18:52.353 INFO  --- [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer : Tomcat started on port(s): 8080 (http) with context path '' 
+2021:04:05 01:18:52.356 INFO  --- [restartedMain] com.weather.api.DemoApplication : Started DemoApplication in 0.473 seconds (JVM running for 658.797) 
+2021:04:05 01:18:52.357 INFO  --- [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged 
+2021:04:05 01:19:05.999 INFO  --- [Thread-22] o.s.b.w.e.tomcat.GracefulShutdown : Commencing graceful shutdown. Waiting for active requests to complete 
+2021:04:05 01:19:06.002 INFO  --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown : Graceful shutdown complete 
+2021:04:05 01:19:06.038 INFO  --- [Thread-22] o.s.s.c.ThreadPoolTaskExecutor : Shutting down ExecutorService 'applicationTaskExecutor' 
+2021:04:05 01:19:06.170 INFO  --- [restartedMain] com.weather.api.DemoApplication : Starting DemoApplication using Java 1.8.0_161 on DESKTOP-JGQ1FNH with PID 5132 (C:\GitHub\RESTful-API\demo\target\classes started by saza in C:\GitHub\RESTful-API\demo) 
+2021:04:05 01:19:06.170 INFO  --- [restartedMain] com.weather.api.DemoApplication : No active profile set, falling back to default profiles: default 
+2021:04:05 01:19:06.336 INFO  --- [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$6159f59c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2021:04:05 01:19:06.337 INFO  --- [restartedMain] o.s.w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0] 
+2021:04:05 01:19:06.371 INFO  --- [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http) 
+2021:04:05 01:19:06.371 INFO  --- [restartedMain] o.a.catalina.core.StandardService : Starting service [Tomcat] 
+2021:04:05 01:19:06.371 INFO  --- [restartedMain] o.a.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.44] 
+2021:04:05 01:19:06.389 INFO  --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext 
+2021:04:05 01:19:06.389 INFO  --- [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 217 ms 
+2021:04:05 01:19:06.464 INFO  --- [restartedMain] o.s.s.c.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor' 
+2021:04:05 01:19:06.525 INFO  --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer : LiveReload server is running on port 35729 
+2021:04:05 01:19:06.533 INFO  --- [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer : Tomcat started on port(s): 8080 (http) with context path '' 
+2021:04:05 01:19:06.535 INFO  --- [restartedMain] com.weather.api.DemoApplication : Started DemoApplication in 0.4 seconds (JVM running for 672.977) 
+2021:04:05 01:19:06.536 INFO  --- [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged 
+2021:04:05 01:19:21.881 INFO  --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2021:04:05 01:19:21.883 INFO  --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet' 
+2021:04:05 01:19:21.886 INFO  --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet : Completed initialization in 1 ms 
+2021:04:05 01:19:21.892 WARN  --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.weather.exception.ApiException: 잘못된 요청입니다. 올바른 요청: get - /weather/today or /weather/tomorrow || put, post, delete - /weather] 
+2021:04:05 01:20:00.127 INFO  --- [http-nio-8080-exec-4] com.zaxxer.hikari.HikariDataSource : HikariPool-2 - Starting... 
+2021:04:05 01:20:02.243 INFO  --- [http-nio-8080-exec-4] com.zaxxer.hikari.HikariDataSource : HikariPool-2 - Start completed. 
+2021:04:05 01:20:05.678 WARN  --- [http-nio-8080-exec-5] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.weather.exception.ApiException: 잘못된 요청입니다. 올바른 요청: get - /weather/today or /weather/tomorrow || put, post, delete - /weather] 
+2021:04:05 01:21:07.733 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested. 
+2021:04:05 01:21:19.983 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown : Commencing graceful shutdown. Waiting for active requests to complete 
+2021:04:05 01:21:19.985 INFO  --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown : Graceful shutdown complete 
+2021:04:05 01:21:20.023 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.c.ThreadPoolTaskExecutor : Shutting down ExecutorService 'applicationTaskExecutor' 
+2021:04:05 01:21:20.023 INFO  --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource : HikariPool-2 - Shutdown initiated... 
+2021:04:05 01:21:21.960 INFO  --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource : HikariPool-2 - Shutdown completed. 
+2021:04:05 01:21:28.466 INFO  --- [restartedMain] com.weather.api.DemoApplication : Starting DemoApplication using Java 1.8.0_161 on DESKTOP-JGQ1FNH with PID 14036 (C:\GitHub\RESTful-API\demo\target\classes started by saza in C:\GitHub\RESTful-API\demo) 
+2021:04:05 01:21:28.469 INFO  --- [restartedMain] com.weather.api.DemoApplication : No active profile set, falling back to default profiles: default 
+2021:04:05 01:21:28.508 INFO  --- [restartedMain] o.s.b.d.restart.ChangeableUrls : The Class-Path manifest attribute in C:\MyStudy\70_spring\mvn_repository\com\oracle\database\jdbc\ojdbc8\19.8.0.0\ojdbc8-19.8.0.0.jar referenced one or more files that do not exist: file:/C:/MyStudy/70_spring/mvn_repository/com/oracle/database/jdbc/ojdbc8/19.8.0.0/oraclepki.jar 
+2021:04:05 01:21:28.508 INFO  --- [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2021:04:05 01:21:28.508 INFO  --- [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2021:04:05 01:21:29.245 INFO  --- [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$bd043285] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2021:04:05 01:21:29.272 INFO  --- [restartedMain] o.s.w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0] 
+2021:04:05 01:21:29.571 INFO  --- [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http) 
+2021:04:05 01:21:29.582 INFO  --- [restartedMain] o.a.catalina.core.StandardService : Starting service [Tomcat] 
+2021:04:05 01:21:29.583 INFO  --- [restartedMain] o.a.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.44] 
+2021:04:05 01:21:29.666 INFO  --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext 
+2021:04:05 01:21:29.666 INFO  --- [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1157 ms 
+2021:04:05 01:21:30.435 INFO  --- [restartedMain] o.s.s.c.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor' 
+2021:04:05 01:21:31.036 INFO  --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer : LiveReload server is running on port 35729 
+2021:04:05 01:21:31.070 INFO  --- [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer : Tomcat started on port(s): 8080 (http) with context path '' 
+2021:04:05 01:21:31.078 INFO  --- [restartedMain] com.weather.api.DemoApplication : Started DemoApplication in 2.991 seconds (JVM running for 3.737) 
+2021:04:05 01:21:52.049 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested. 
+2021:04:05 01:22:04.762 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown : Commencing graceful shutdown. Waiting for active requests to complete 
+2021:04:05 01:22:04.766 INFO  --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown : Graceful shutdown complete 
+2021:04:05 01:22:04.808 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.c.ThreadPoolTaskExecutor : Shutting down ExecutorService 'applicationTaskExecutor' 
